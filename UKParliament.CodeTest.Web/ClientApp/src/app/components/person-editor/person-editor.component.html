@@ -1,0 +1,20 @@
+<!-- person-editor.component.html -->
+<div>
+    <label>First Name:</label>
+    <input type="text" [(ngModel)]="person.firstName" required>
+</div>
+<div>
+    <label>Last Name:</label>
+    <input type="text" [(ngModel)]="person.lastName" required>
+</div>
+<div>
+    <label>Date of Birth:</label>
+    <input type="date" [(ngModel)]="person.dob" required>
+</div>
+<div>
+    <label>Department:</label>
+    <input type="text" [(ngModel)]="person.department" required>
+</div>
+<div>
+    <button (click)="savePerson()">Save</button>
+</div>

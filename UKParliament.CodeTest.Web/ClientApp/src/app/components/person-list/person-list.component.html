@@ -1,0 +1,6 @@
+<!-- person-list.component.html -->
+<div *ngFor="let person of persons" (click)="selectPerson(person)">
+    <span>{{ person.firstName }} {{ person.lastName }}</span>
+    <span>{{ person.dob | date }}</span>
+    <span>{{ person.departmentName }}</span>
+</div>
